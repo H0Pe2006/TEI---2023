@@ -1,1 +1,1 @@
-# TEI---2023
+# Repositório para códigos de Tópicos Especiais em Informática
