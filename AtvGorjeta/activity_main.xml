@@ -8,13 +8,6 @@
     android:scrollbarSize="10sp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Quanto deu a conta?"
-        android:textSize="20sp" />
-
     <EditText
         android:id="@+id/editTextValor"
         android:layout_width="match_parent"
@@ -24,14 +17,21 @@
         android:inputType="number" />
 
     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quanto deu a conta?"
+        android:textSize="24sp" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Quantas pessoas vão dividir a conta?"
-        android:textSize="20sp" />
+        android:textSize="24sp" />
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/seekbarPessoas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:max="10"
@@ -42,25 +42,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Quantos porcento você da de gorjeta?"
-        android:textSize="20sp" />
+        android:textSize="24sp" />
 
     <SeekBar
-        android:id="@+id/seekBar2"
+        android:id="@+id/seekbarGorjeta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="10" />
+        android:max="100" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/calcButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="63dp"
+        android:onClick="CalcularConta"
         android:text="calcular conta" />
 
     <TextView
         android:id="@+id/textResultado"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Resultado"
+        android:hint="Resultado"
         android:textSize="30sp" />
 
 </LinearLayout>
