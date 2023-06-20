@@ -1,14 +1,24 @@
-package com.example.atividade_gorjeta;
+package com.example.atv_gorjeta;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private SeekBar seekbarPessoas;
+    private SeekBar seekbarGorjeta;
+    private EditText ValorConta;
+    private TextView textResultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    public void
 }
