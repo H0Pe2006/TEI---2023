@@ -5,62 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:scrollbarSize="10sp"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity" >
     <EditText
-        android:id="@+id/editTextValor"
+        android:id="@+id/valorConta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Digite o valor"
-        android:inputType="number" />
-
+        android:hint="Digite o valor da conta"
+        android:inputType="textPersonName" />
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/numPessoas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quanto deu a conta?"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Quantas pessoas vão dividir a conta?"
-        android:textSize="24sp" />
-
+        android:text="Números de Pessoas" />
     <SeekBar
-        android:id="@+id/seekbarPessoas"
+        android:id="@+id/seekBarPessoas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="10"
-        android:scrollbarSize="4sp" />
-
+        android:max="20" />
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/valorGorjeta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quantos porcento você da de gorjeta?"
-        android:textSize="24sp" />
-
+        android:text="Porcentagem da Gorjeta" />
     <SeekBar
-        android:id="@+id/seekbarGorjeta"
+        android:id="@+id/seekBarGorjeta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="100" />
+        android:max="50" />
 
     <Button
         android:id="@+id/calcButton"
         android:layout_width="match_parent"
-        android:layout_height="63dp"
-        android:onClick="CalcularConta"
-        android:text="calcular conta" />
-
-    <TextView
-        android:id="@+id/textResultado"
         android:layout_height="wrap_content"
-        android:hint="Resultado"
-        android:textSize="30sp" />
+        android:onClick="calcularValor"
+        android:text="Calcular" />
 
 </LinearLayout>
